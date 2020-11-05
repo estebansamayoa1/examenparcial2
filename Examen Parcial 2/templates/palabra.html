@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title>Form</title>
+    <style>
+      .avatar {
+        vertical-align: middle;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+      .container{
+        display: flex;
+        height: 150vh;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5vh !important;
+      }
+
+      .row{
+        min-height: 150px;
+      }
+    </style>
+</head>
+<body style="padding: 4vh;">
+  <div class="container shadow-lg">
+    <h2>
+      Formulario
+    </h2>
+    <img src="../static/yo.jpg" alt="Foto de perfil" style="width:500px;height:600px; margin:center">
+      <form method="POST">
+        <div class="form-group", action=" ">
+          <label>Palabra</label>
+        <input type="text" name="palabra"  placeholder="Ingrese una palabra">
+        <button type="submit">Enter</button>
+      </form> 
+      
+    </div>
+    <p>Palabra: {{palabra}}</p>
+    <p>Reversa: {{reverse}}</p>
+    <p>Upper: {{upper}}</p>
+    <p>Lower: {{lower}}</p> 
+</body>
+</html>
